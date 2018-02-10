@@ -1,0 +1,31 @@
+.event-icon-wrapper {
+    background-color: lightgray;
+    height: 400px;
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.event-icon-name {
+    font-size: 16px;
+    font-family: 'Concert One';
+}
+
+img {
+    border-radius: 50%;
+}
+
+body {
+    padding: 10px;
+}
+
+.signin-container {
+    padding: 50px;
+    background-color: aliceblue;
+    max-width: 500px;
+    width: 75%;
+    margin: auto;
+    margin-top: 300px;
+}

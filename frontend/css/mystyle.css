@@ -36,3 +36,16 @@ img .event-icon-wrapper {
 img .item active {
     border-radius: 50
 }
+
+body {
+    padding: 10px;
+}
+
+.signin-container {
+    padding: 50px;
+    background-color: aliceblue;
+    max-width: 500px;
+    width: 75%;
+    margin: auto;
+    margin-top: 300px;
+}
