@@ -1,0 +1,9 @@
+.event-icon-wrapper {
+    background-color: aqua;
+    height: 500px;
+    width: 100%;
+}
+
+.event-icon-name {
+    font-size: 32px;
+}

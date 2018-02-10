@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,12 +15,13 @@
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
+    <!-- My styles -->
+    <link href="css/mystyle.css" rel="stylesheet">
+
 </head>
 
 <body>
-
-    <div id="wrapper">
-
+    <div id="wrapper" class="toggled">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -56,16 +56,49 @@
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
+
+
         <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <h1>Simple Sidebar</h1>
-                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+
+            <!-- Page Content -->
+            <div class="container">
+                <div class="row">
+                    <!-- Blog Entries Column -->
+                    <div class="col-md-10">
+                        <h1 class="my-4">
+                            News Feed
+                        </h1>
+
+                        <div class="event-icon-wrapper">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="event-icon-picture"> pic here</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="event-icon-description"> description here</div>
+                                    <div class="event-icon-name">Name</div>
+                                    <div class="event-icon-location"> location</div>
+                                    <div class="event-icon-time">time</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog Post -->
+                    </div>
+                </div>
             </div>
+            <!-- /.row -->
+
+
+
+            <!-- Event Icon -->
+            <!--
+       
+
+            <!-- ToggleButton -->
+
+
         </div>
         <!-- /#page-content-wrapper -->
-
     </div>
     <!-- /#wrapper -->
 
