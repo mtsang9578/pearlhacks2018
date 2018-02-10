@@ -1,19 +1,22 @@
 .event-icon-wrapper {
     background-color: lightgray;
-    height: 400px;
+    height: 320px;
     width: 100%;
-    padding-top: 30px;
-    padding-right: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
     padding-bottom: 30px;
     padding-left: 20px;
 }
 
 .event-icon-name {
     font-size: 16px;
-    font-family: 'Concert One';
+
+}
+.event-icon-description {
+
 }
 
-img {
+img .event-icon-wrapper {
     border-radius: 50%;
 }
 
