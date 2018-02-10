@@ -10,13 +10,29 @@
 
 .event-icon-name {
     font-size: 16px;
+    font-family: Righteous;
 
 }
 .event-icon-description {
+    font-family: Righteous;
+}
 
+.event-icon-location {
+    font-family:  Righteous;
+}
+
+.event-icon-destination {
+    font-family: Righteous;
+}
+
+.event-icon-time {
+    font-family: Righteous;
 }
 
 img .event-icon-wrapper {
     border-radius: 50%;
 }
 
+img .item active {
+    border-radius: 50
+}
