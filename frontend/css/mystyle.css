@@ -14,27 +14,28 @@
 
 }
 .event-icon-description {
+    font-size: 16px;
     font-family: Righteous;
 }
 
 .event-icon-location {
+    font-size: 16px;
     font-family:  Righteous;
 }
 
 .event-icon-destination {
+    font-size: 16px;
     font-family: Righteous;
 }
 
 .event-icon-time {
+    font-size: 16px;
     font-family: Righteous;
 }
 
 img .event-icon-wrapper {
+    font-size: 16px;
     border-radius: 50%;
-}
-
-img .item active {
-    border-radius: 50
 }
 
 body {

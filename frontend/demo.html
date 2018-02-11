@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		
+
+		
+		
+	</head>
+	<body>
+	
+	<div class="slidewrap" data-autorotate="5000">
+		<ul class="slidecontrols">
+			<li><a href="#sliderName" class="next">Next</a></li>
+			<li><a href="#sliderName" class="prev">Prev</a></li>
+		</ul>
+		<ul class="slider" id="sliderName">
+			<li class="slide">	
+				<div class="event-icon-wrapper">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="event-icon-picture"></div>
+                                    <img src="http://wtop.com/wp-content/uploads/2017/05/ThinkstockPhotos-526833490.jpg" alt="Mountain View" width="185" height="185">
+                                </div>
+                                <div class="col-6">
+                                    <div class="event-icon-description"><b>Description: </b>
+                                        <br>I'm so drunk right now and in the frat areas. Anyone wanna walk back to west dorms with me? Baltimore at night is SKETCH</div>
+                                    <div class="event-icon-name"><b>Name:</b>
+                                        <br>Emily Wanton</div>
+                                    <div class="event-icon-location"><b>My Location:</b>
+                                        <br>Phi Sigma Pi</div>
+                                    <div class="event-icon-destination"><b>Destination:<br></b>Burdell Common Dorms</div>
+                                    <div class="event-icon-time"><b>Time:</b>
+                                        <br>2:45am</div>
+                                
+                                </div>
+                            </div>
+                        </div>
+			</li>
+			<li class="slide">	
+				<h2 class="slidehed"><a href="#">Second Slide</a></h2>
+				<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien.</p>
+			</li>
+			<li class="slide">	
+				<h2 class="slidehed">Third Slide</h2>
+				<p>Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula egestas tincidunt. Nullam risus magna, ornare vitae varius eget.</p>
+			</li>
+			<li class="slide">	
+				<h2 class="slidehed"><a href="#">Fourth Slide</a></h2>
+				<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio.</p>
+			</li>
+			<li class="slide">	
+				<h2 class="slidehed">Fif' Slide</h2>
+				<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien.</p>
+			</li>
+		</ul>
+	</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+	<script src="plugin.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.slidewrap').carousel({
+				slider: '.slider',
+				slide: '.slide',
+				slideHed: '.slidehed',
+				nextSlide : '.next',
+				prevSlide : '.prev',
+				addPagination: true,
+				addNav : false
+			});
+			
+			$('.slidewrap2').carousel({
+				slider: '.slider',
+				slide: '.slide',
+				addNav: false,
+				addPagination: true,
+				speed: 300 // ms.
+			});
+			
+			$('.slidewrap3').carousel({ 
+					namespace: "mr-rotato" // Defaults to “carousel”.
+				})
+				.bind({
+					'mr-rotato-beforemove' : function() {
+						$('.events').append("<li>“beforemove” event fired.</li>");
+					},
+					'mr-rotato-aftermove' : function() {
+						$('.events').append("<li>“aftermove” event fired.</li>");
+					}
+				})
+				.after('<ul class="events">Events</ul>');
+		});
+	</script>
+	</body>
+</html>
