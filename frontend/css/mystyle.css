@@ -1,7 +1,7 @@
 .event-icon-wrapper {
     background-color: lightgray;
     height: 320px;
-    width: 90%;
+    width: 480px;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
@@ -59,7 +59,7 @@ body {
     margin-top: 300px;
 }
 button {
-    background-color: #555555; /* Green */
+    background-color: #555555; /* Black */
     border: none;
     color: white;
     padding: 2px 4px;
@@ -81,4 +81,12 @@ button {
 button:hover {
     background-color: #555555;
     color: white;
+}
+.ad-left {
+  float: left;
+}
+
+.ad-right {
+  float: right;
+  margin-left: 10px;
 }
