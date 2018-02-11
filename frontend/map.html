@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Places Searchbox</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 400px;
+        width: 100%; 
+      }
+    </style>
+    
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- My styles -->
+    <link href="css/mystyle.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Contrail+One|Lobster+Two|Oleo+Script+Swash+Caps|Righteous|Squada+One" rel="stylesheet">
+  </head>
+    
+  <body>
+    <div id="wrapper" class="toggled"> 
+        
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Newsfeed</a>
+                </li>
+                <li>
+                    <a href="#">My Account</a>
+                </li>
+                <li>
+                    <a href="#">My Events</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">Messaging Room</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+    <div id="page-content-wrapper">
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div class="containers" id="map"></div>
+    <script>
+      // This example adds a search box to a map, using the Google Place Autocomplete
+      // feature. People can enter geographical searches. The search box will return a
+      // pick list containing a mix of places and predicted search terms.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 35.9132, lng: -79.0558},
+          zoom: 13,
+          mapTypeId: 'roadmap'
+        });
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
+        });
+
+        var markers = [];
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function() {
+          var places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+
+          // Clear out the old markers.
+          markers.forEach(function(marker) {
+            marker.setMap(null);
+          });
+          markers = [];
+
+          // For each place, get the icon, name and location.
+          var bounds = new google.maps.LatLngBounds();
+          places.forEach(function(place) {
+            if (!place.geometry) {
+              console.log("Returned place contains no geometry");
+              return;
+            }
+            var icon = {
+              url: place.icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25)
+            };
+
+            // Create a marker for each place.
+            markers.push(new google.maps.Marker({
+              map: map,
+              icon: icon,
+              title: place.name,
+              position: place.geometry.location
+            }));
+
+            if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
+          });
+          map.fitBounds(bounds);
+        });
+      }
+    
+    </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsc1zwbpbycqMwpzLGqjpqXqF4BuSz6W0&libraries=places&callback=initAutocomplete"
+                 async defer></script>
+        
+    <div class="row">
+                    <!-- Blog Entries Column -->
+                    <div class="col-md-10">
+                        <h1 class="my-4">
+                            News Feed
+                        </h1>
+
+                        <div class="event-icon-wrapper">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="event-icon-picture"></div>
+                                    <img src="http://wtop.com/wp-content/uploads/2017/05/ThinkstockPhotos-526833490.jpg" alt="Mountain View" width="185" height="185">
+                                </div>
+                                <div class="col-6">
+                                    <div class="event-icon-description"><b>Description: </b>
+                                        <br>I'm so drunk right now and in the frat areas. Anyone wanna walk back to west dorms with me? Baltimore at night is SKETCH</div>
+                                    <div class="event-icon-name"><b>Name:</b>
+                                        <br>Emily Wanton</div>
+                                    <div class="event-icon-location"><b>My Location:</b>
+                                        <br>Phi Sigma Pi</div>
+                                    <div class="event-icon-destination"><b>Destination:<br></b>Burdell Common Dorms</div>
+                                    <div class="event-icon-time"><b>Time:</b>
+                                        <br>2:45am</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog Post -->
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
