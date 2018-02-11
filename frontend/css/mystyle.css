@@ -1,3 +1,10 @@
+.sidebar {
+    margin: 10px;
+    width: 100px;
+    height: 100%;
+    background-color: blue;
+}
+
 .event-icon-wrapper {
     background-color: lightgray;
     height: 320px;
@@ -10,31 +17,26 @@
 
 .event-icon-name {
     font-size: 16px;
-    font-family: Squada One;
-
 }
+
 .event-icon-posted {
     font-size: 16px;
-    font-family: Squada One;
 }
+
 .event-icon-description {
     font-size: 16px;
-    font-family: Squada One;
 }
 
 .event-icon-location {
     font-size: 16px;
-    font-family: Squada One;
 }
 
 .event-icon-destination {
     font-size: 16px;
-    font-family: Squada One;
 }
 
 .event-icon-time {
     font-size: 16px;
-    font-family: Squada One;
 }
 
 .event-icon-picture {
@@ -43,10 +45,12 @@
 
 .event-date {
     font-size: 16px;
-    font-family: Squada One;
 }
 
 body {
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
     padding: 10px;
 }
 
@@ -58,8 +62,10 @@ body {
     margin: auto;
     margin-top: 300px;
 }
+
 button {
-    background-color: #555555; /* Black */
+    background-color: #555555;
+    /* Black */
     border: none;
     color: white;
     padding: 2px 4px;
@@ -68,13 +74,27 @@ button {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
 }
+
+.confirmed-events-container {
+    height: 50%;
+    width: 100%;
+    overflow-x: scroll;
+    display: inline;
+    overflow-y: hidden;
+}
+
+.confirmed-event-wrapper {
+    float: left;
+}
+
 button {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #555555;
 }
 
@@ -82,13 +102,12 @@ button:hover {
     background-color: #555555;
     color: white;
 }
+
 .left {
-  float: left;
+    display: inline-block;
 }
 
 .right {
-  float: right;
-  margin-left: 10px;
+    float: right;
+    margin-left: 10px;
 }
-
-
