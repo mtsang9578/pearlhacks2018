@@ -1,6 +1,6 @@
 .event-icon-wrapper {
     background-color: lightgray;
-    height: 320px;
+    height: 300px;
     width: 100%;
     padding-top: 20px;
     padding-right: 20px;
@@ -10,31 +10,31 @@
 
 .event-icon-name {
     font-size: 16px;
-    font-family: Righteous;
+    font-family: Squada One;
 
 }
 .event-icon-description {
-    font-family: Righteous;
+    font-size: 16px;
+    font-family: Squada One;
 }
 
 .event-icon-location {
-    font-family:  Righteous;
+    font-size: 16px;
+    font-family: Squada One;
 }
 
 .event-icon-destination {
-    font-family: Righteous;
+    font-size: 16px;
+    font-family: Squada One;
 }
 
 .event-icon-time {
-    font-family: Righteous;
+    font-size: 16px;
+    font-family: Squada One;
 }
 
-img .event-icon-wrapper {
+.event-icon-picture {
     border-radius: 50%;
-}
-
-img .item active {
-    border-radius: 50
 }
 
 body {
