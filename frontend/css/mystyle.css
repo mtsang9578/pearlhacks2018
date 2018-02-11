@@ -1,3 +1,6 @@
+Newsfeed {
+    font-family: Contrail One;
+}
 .event-icon-wrapper {
     background-color: lightgray;
     height: 320px;
@@ -7,11 +10,9 @@
     padding-bottom: 30px;
     padding-left: 20px;
 }
-
 .event-icon-name {
     font-size: 16px;
     font-family: Squada One;
-
 }
 .event-icon-posted {
     font-size: 16px;
@@ -21,35 +22,28 @@
     font-size: 16px;
     font-family: Squada One;
 }
-
 .event-icon-location {
     font-size: 16px;
     font-family: Squada One;
 }
-
 .event-icon-destination {
     font-size: 16px;
     font-family: Squada One;
 }
-
 .event-icon-time {
     font-size: 16px;
     font-family: Squada One;
 }
-
 .event-icon-picture {
     border-radius: 50%;
 }
-
 .event-date {
     font-size: 16px;
     font-family: Squada One;
 }
-
 body {
     padding: 10px;
 }
-
 .signin-container {
     padding: 50px;
     background-color: aliceblue;
@@ -59,7 +53,8 @@ body {
     margin-top: 300px;
 }
 button {
-    background-color: #555555; /* Black */
+    background-color: #555555;
+    /* Black */
     border: none;
     color: white;
     padding: 2px 4px;
@@ -68,27 +63,24 @@ button {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
 }
 button {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #555555;
 }
-
 button:hover {
     background-color: #555555;
     color: white;
 }
 .left {
-  float: left;
+    float: left;
 }
-
 .right {
-  float: right;
-  margin-left: 10px;
+    float: right;
+    margin-left: 10px;
 }
-
-
