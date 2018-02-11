@@ -1,11 +1,15 @@
-.sidebar {
+<<<<<<< HEAD .sidebar {
     margin: 10px;
     width: 100px;
     height: 100%;
     background-color: blue;
 }
 
-.event-icon-wrapper {
+=======Newsfeed {
+    font-family: Contrail One;
+}
+
+>>>>>>> 9753522f7d445d9671a11edaf1175c15493d6ebe .event-icon-wrapper {
     background-color: lightgray;
     height: 320px;
     width: 470px;
@@ -104,10 +108,17 @@ button:hover {
 }
 
 .left {
-    display: inline-block;
+    <<<<<<< HEAD display: inline-block;
+    =======float: left;
+    >>>>>>> 9753522f7d445d9671a11edaf1175c15493d6ebe
 }
 
 .right {
     float: right;
     margin-left: 10px;
+    <<<<<<< HEAD
 }
+
+=======
+}
+>>>>>>> 9753522f7d445d9671a11edaf1175c15493d6ebe
