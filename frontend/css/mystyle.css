@@ -1,7 +1,7 @@
 .event-icon-wrapper {
     background-color: lightgray;
     height: 320px;
-    width: 480px;
+    width: 470px;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
@@ -82,11 +82,13 @@ button:hover {
     background-color: #555555;
     color: white;
 }
-.ad-left {
+.left {
   float: left;
 }
 
-.ad-right {
+.right {
   float: right;
   margin-left: 10px;
 }
+
+
